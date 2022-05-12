@@ -6,21 +6,21 @@
   changed_when: false
 
 - name: download Go.
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ go_download_url }}"
     dest: /usr/local/src/{{ go_tarball }}
     checksum: "sha256:{{ go_checksum }}"
   when: go_version_result is failed
 
 - name: extract Go.
-  unarchive:
+  ansible.builtin.unarchive:
     src: /usr/local/src/{{ go_tarball }}
     dest: /usr/local
     copy: no
   when: go_version_result is failed
 
 - name: add Go to to system-wide $PATH.
-  copy:
+  ansible.builtin.copy:
     dest: /etc/profile.d/go-path.sh
     content: |-
       export PATH=$PATH:/usr/local/go/bin
