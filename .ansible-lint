@@ -1,6 +1,8 @@
-skip_list:
-  - 'yaml'
-  - 'role-name'
-  - 'internal-error'
-  - experimental  # all rules tagged as experimental
-  - fqcn-builtins  # Use FQCN for builtin actions.
+---
+#
+# Ansible managed
+#
+exclude_list:
+  - ./molecule/default/collections.yml
+  - ./.tox
+  - ./.cache
