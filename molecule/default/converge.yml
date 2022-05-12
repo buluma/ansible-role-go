@@ -11,7 +11,7 @@
       changed_when: false
 
   roles:
-    - role: ansible-role-go
+    - role: buluma.go
 
   tasks:
     - name: verify that Go is installed and available in the $PATH.
