@@ -14,8 +14,6 @@ molecule:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "amazonlinux"
         tag: "1"
       - image: "amazonlinux"
