@@ -15,8 +15,6 @@ molecule:
       - image: "enterpriselinux"
         tag: "7"
       - image: "amazonlinux"
-        tag: "1"
-      - image: "amazonlinux"
         tag: "latest"
       - image: "ubuntu"
         tag: "latest"
