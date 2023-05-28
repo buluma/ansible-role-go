@@ -5,4 +5,4 @@
 repository:
   description: Go (language) installation for Linux.
   homepage: https://buluma.github.io/
-  topics: go, golang, ansible, molecule, tox, playbook, hacktoberfest
+  topics: go, golang, ansible, molecule, tox, playbook
