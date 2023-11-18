@@ -1,10 +1,10 @@
-# [go](#go)
+# [Ansible role go](#go)
 
 Go (language) installation for Linux.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-go/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-go/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-go/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-go)|[![quality](https://img.shields.io/ansible/quality/59163)](https://galaxy.ansible.com/buluma/go)|[![downloads](https://img.shields.io/ansible/role/d/59163)](https://galaxy.ansible.com/buluma/go)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-go.svg)](https://github.com/buluma/ansible-role-go/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-go.svg)](https://github.com/buluma/ansible-role-go/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-go.svg)](https://github.com/buluma/ansible-role-go/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-go/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-go/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-go/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-go)|[![downloads](https://img.shields.io/ansible/role/d/4721)](https://galaxy.ansible.com/buluma/go)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-go.svg)](https://github.com/buluma/ansible-role-go/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-go.svg)](https://github.com/buluma/ansible-role-go/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-go.svg)](https://github.com/buluma/ansible-role-go/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -101,7 +101,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|
 |[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
 
-The minimum version of Ansible required is 2.9, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done to:
 
 - The previous version.
 - The current version.
