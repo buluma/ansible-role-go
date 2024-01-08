@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.0](https://github.com/buluma/ansible-role-go/tree/0.2.0) (2024-01-06)
+
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.1.1...0.2.0)
+
 ## [0.1.1](https://github.com/buluma/ansible-role-go/tree/0.1.1) (2022-05-13)
 
 [Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.1.0...0.1.1)
