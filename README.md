@@ -27,7 +27,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
     - role: buluma.go
 
   tasks:
-    - name: verify that Go is installed and available in the $PATH.
+    - name: Verify that Go is installed and available in the $PATH.
       ansible.builtin.command: go version
       environment:
         PATH: /usr/local/go/bin:{{ ansible_env.PATH }}
