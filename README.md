@@ -95,7 +95,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|all|
 |[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
 |[Amazon](https://hub.docker.com/repository/docker/buluma/amazonlinux/general)|all|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|

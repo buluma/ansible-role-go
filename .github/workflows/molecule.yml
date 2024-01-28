@@ -47,12 +47,6 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "enterpriselinux"
-            tag: "7"
-          - image: "enterpriselinux"
-            tag: "8"
-          - image: "enterpriselinux"
-            tag: "latest"
           - image: "fedora-systemd"
             tag: "38"
           - image: "fedora-systemd"
@@ -63,6 +57,8 @@ jobs:
             tag: "1"
           - image: "amazonlinux"
             tag: "latest"
+          - image: "amazonlinux"
+            tag: "2023"
           - image: "debian-systemd"
             tag: "latest"
           - image: "debian-systemd"
