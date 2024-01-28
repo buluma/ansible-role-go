@@ -54,8 +54,6 @@ jobs:
           - image: "fedora-systemd"
             tag: "rawhide"
           - image: "amazonlinux"
-            tag: "1"
-          - image: "amazonlinux"
             tag: "latest"
           - image: "amazonlinux"
             tag: "2023"
