@@ -8,7 +8,6 @@
 
 - Bump buluma/molecule-action from 6.0.1 to 6.0.3 [\#20](https://github.com/buluma/ansible-role-go/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#19](https://github.com/buluma/ansible-role-go/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump actions/setup-python from 2 to 3 [\#1](https://github.com/buluma/ansible-role-go/pull/1) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.2.0](https://github.com/buluma/ansible-role-go/tree/0.2.0) (2024-01-06)
 
@@ -25,6 +24,7 @@
 **Merged pull requests:**
 
 - Bump actions/checkout from 2 to 3 [\#2](https://github.com/buluma/ansible-role-go/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/setup-python from 2 to 3 [\#1](https://github.com/buluma/ansible-role-go/pull/1) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.0](https://github.com/buluma/ansible-role-go/tree/0.1.0) (2022-05-12)
 
