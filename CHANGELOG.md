@@ -1,8 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-go/tree/HEAD)
+## [0.3.1](https://github.com/buluma/ansible-role-go/tree/0.3.1) (2024-01-29)
 
-[Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.2.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.3.0...0.3.1)
+
+## [0.3.0](https://github.com/buluma/ansible-role-go/tree/0.3.0) (2024-01-28)
+
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.2.0...0.3.0)
 
 **Merged pull requests:**
 
