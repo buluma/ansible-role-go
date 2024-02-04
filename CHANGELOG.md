@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-go/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.3.1...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-go/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.3.1](https://github.com/buluma/ansible-role-go/tree/0.3.1) (2024-01-29)
 
 [Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.3.0...0.3.1)
