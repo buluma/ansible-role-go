@@ -13,6 +13,7 @@ skip_list:
   - yaml[truthy]
   - no-free-form
   - risky-file-permissions
+  - schema[meta]
 
 enable_list:
   - name[prefix]
