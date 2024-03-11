@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump release-drafter/release-drafter from 5 to 6 [\#22](https://github.com/buluma/ansible-role-go/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-go/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.3.1](https://github.com/buluma/ansible-role-go/tree/0.3.1) (2024-01-29)
