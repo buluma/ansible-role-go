@@ -25,7 +25,7 @@
   ansible.builtin.unarchive:
     src: /usr/local/src/{{ go_tarball }}
     dest: /usr/local
-    copy: no
+    copy: false
   when: go_version_result is failed
         or go_version not in go_version_result.stdout
 
