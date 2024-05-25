@@ -14,12 +14,12 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   pre_tasks:
     - name: Update apt cache.
-      ansible.builtin.apt: update_cache=yes cache_valid_time=600
+      ansible.builtin.apt: update_cache=true cache_valid_time=600
       when: ansible_os_family == 'Debian'
       changed_when: false
 
@@ -40,8 +40,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
@@ -62,7 +62,7 @@ go_version: "1.21.6"
 go_platform: linux
 go_arch: amd64
 go_tarball: go{{ go_version }}.{{ go_platform }}-{{ go_arch }}.tar.gz
-go_download_url: https://dl.google.com/go/{{ go_tarball }}
+go_download_url: "https://dl.google.com/go/{{ go_tarball }}"
 go_checksum: '3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4'
 ```
 
