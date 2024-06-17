@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-go/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/24.3.31...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/molecule-action from 24.2.0 to 24.6.17 [\#27](https://github.com/buluma/ansible-role-go/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.3.31](https://github.com/buluma/ansible-role-go/tree/24.3.31) (2024-03-26)
 
 [Full Changelog](https://github.com/buluma/ansible-role-go/compare/0.3.1...24.3.31)
