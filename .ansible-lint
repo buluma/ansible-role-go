@@ -2,18 +2,10 @@
 #
 # Ansible managed
 #
-exclude_paths:
   - molecule/default/collections.yml
-  - .tox
   - .cache
   - .github
   - requirements.yml
-
-skip_list:
-  - yaml[truthy]
-  - no-free-form
-  - risky-file-permissions
-  - schema[meta]
 
 enable_list:
   - name[prefix]
