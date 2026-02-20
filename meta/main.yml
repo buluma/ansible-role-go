@@ -10,17 +10,17 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
-  - name: Amazon
-    versions:
-    - all
-  - name: Debian
-    versions:
-    - all
-  - name: Ubuntu
-    versions:
-    - all
+    - name: Amazon
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
   galaxy_tags:
     - go
-  - golang
+    - golang
 dependencies: []
 allow_duplicates: true
