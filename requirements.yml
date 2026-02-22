@@ -1,6 +1,5 @@
----
 roles:
-  - name: buluma.bootstrap
-  - name: buluma.core_dependencies
-  - name: buluma.buildtools
-  - name: buluma.ca_certificates
+- name: buluma.bootstrap
+- name: buluma.core_dependencies
+- name: buluma.buildtools
+- name: buluma.ca_certificates

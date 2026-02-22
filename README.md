@@ -11,43 +11,37 @@ Go (language) installation for Linux.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-go/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
----
-- name: Converge
-  hosts: all
-  become: true
+- become: true
   gather_facts: true
-
+  hosts: all
+  name: Converge
   pre_tasks:
-    - name: Update apt cache.
-      ansible.builtin.apt: update_cache=true cache_valid_time=600
-      when: ansible_os_family == 'Debian'
-      changed_when: false
-
+  - ansible.builtin.apt: update_cache=true cache_valid_time=600
+    changed_when: false
+    name: Update apt cache.
+    when: ansible_os_family == 'Debian'
   roles:
-    - role: buluma.go
-
+  - role: buluma.go
   tasks:
-    - name: Verify that Go is installed and available in the $PATH.
-      ansible.builtin.command: go version
-      environment:
-        PATH: /usr/local/go/bin:{{ ansible_env.PATH }}
-      changed_when: false
+  - ansible.builtin.command: go version
+    changed_when: false
+    environment:
+      PATH: /usr/local/go/bin:{{ ansible_env.PATH }}
+    name: Verify that Go is installed and available in the $PATH.
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-go/blob/master/molecule/default/prepare.yml):
 
 ```yaml
----
-- name: Prepare
-  hosts: all
-  become: true
+- become: true
   gather_facts: false
-
+  hosts: all
+  name: Prepare
   roles:
-    - role: buluma.bootstrap
-    - role: buluma.core_dependencies
-    - role: buluma.buildtools
-    - role: buluma.ca_certificates
+  - role: buluma.bootstrap
+  - role: buluma.core_dependencies
+  - role: buluma.buildtools
+  - role: buluma.ca_certificates
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -57,13 +51,12 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-go/blob/master/defaults/main.yml):
 
 ```yaml
----
-go_version: "1.21.6"
-go_platform: linux
 go_arch: amd64
+go_checksum: 3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4
+go_download_url: https://dl.google.com/go/{{ go_tarball }}
+go_platform: linux
 go_tarball: go{{ go_version }}.{{ go_platform }}-{{ go_arch }}.tar.gz
-go_download_url: "https://dl.google.com/go/{{ go_tarball }}"
-go_checksum: '3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4'
+go_version: 1.21.6
 ```
 
 ## [Requirements](#requirements)
