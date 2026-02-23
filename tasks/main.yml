@@ -1,28 +1,31 @@
-- ansible.builtin.command: /usr/local/go/bin/go version
-  changed_when: false
-  ignore_errors: true
-  name: Check if Go is already installed.
-  register: go_version_result
-- ansible.builtin.file:
-    path: /usr/local/go
-    state: absent
-  name: Remove current installation.
-  when:
-  - go_version_result is succeeded
-  - go_version not in go_version_result.stdout
-- ansible.builtin.get_url:
-    checksum: sha256:{{ go_checksum }}
-    dest: /usr/local/src/{{ go_tarball }}
-    url: '{{ go_download_url }}'
-  name: Download Go.
-  when: go_version_result is failed or go_version not in go_version_result.stdout
-- ansible.builtin.unarchive:
-    copy: false
-    dest: /usr/local
-    src: /usr/local/src/{{ go_tarball }}
-  name: Extract Go.
-  when: go_version_result is failed or go_version not in go_version_result.stdout
-- ansible.builtin.copy:
-    content: export PATH=$PATH:/usr/local/go/bin
-    dest: /etc/profile.d/go-path.sh
-  name: Add Go to to system-wide $PATH.
+---
+  - ansible.builtin.command: /usr/local/go/bin/go version
+    changed_when: false
+    ignore_errors: true
+    name: Check if Go is already installed.
+    register: go_version_result
+  - ansible.builtin.file:
+      path: /usr/local/go
+      state: absent
+    name: Remove current installation.
+    when:
+      - go_version_result is succeeded
+      - go_version not in go_version_result.stdout
+  - ansible.builtin.get_url:
+      checksum: sha256:{{ go_checksum }}
+      dest: /usr/local/src/{{ go_tarball }}
+      url: '{{ go_download_url }}'
+    name: Download Go.
+    when: go_version_result is failed or go_version not in 
+      go_version_result.stdout
+  - ansible.builtin.unarchive:
+      copy: false
+      dest: /usr/local
+      src: /usr/local/src/{{ go_tarball }}
+    name: Extract Go.
+    when: go_version_result is failed or go_version not in 
+      go_version_result.stdout
+  - ansible.builtin.copy:
+      content: export PATH=$PATH:/usr/local/go/bin
+      dest: /etc/profile.d/go-path.sh
+    name: Add Go to to system-wide $PATH.
