@@ -16,14 +16,14 @@
     dest: /usr/local/src/{{ go_tarball }}
     url: '{{ go_download_url }}'
   name: Download Go.
-  when: go_version_result is failed or go_version not in 
+  when: go_version_result is failed or go_version not in
     go_version_result.stdout
 - ansible.builtin.unarchive:
     copy: false
     dest: /usr/local
     src: /usr/local/src/{{ go_tarball }}
   name: Extract Go.
-  when: go_version_result is failed or go_version not in 
+  when: go_version_result is failed or go_version not in
     go_version_result.stdout
 - ansible.builtin.copy:
     content: export PATH=$PATH:/usr/local/go/bin
