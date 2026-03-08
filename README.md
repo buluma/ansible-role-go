@@ -58,10 +58,10 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 go_arch: amd64
 go_checksum: 3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4
-go_download_url: https://dl.google.com/go/{{ go_tarball }}
+go_download_url: "https://dl.google.com/go/{{ go_tarball }}"
 go_platform: linux
 go_tarball: go{{ go_version }}.{{ go_platform }}-{{ go_arch }}.tar.gz
-go_version: 1.21.6
+go_version: "1.21.6"
 ```
 
 ## [Requirements](#requirements)
@@ -113,3 +113,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
