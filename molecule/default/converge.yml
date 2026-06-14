@@ -17,4 +17,4 @@
       ansible.builtin.command: go version
       changed_when: false
       environment:
-        PATH: /usr/local/go/bin:{{ ansible_facts.env.PATH }}
+        PATH: /usr/local/go/bin:{{ ansible_facts['env'].PATH }}
