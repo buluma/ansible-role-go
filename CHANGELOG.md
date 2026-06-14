@@ -1,11 +1,15 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-go/tree/HEAD)
+## [26.6.0](https://github.com/buluma/ansible-role-go/tree/26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-go/compare/24.3.31...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/24.3.31...26.6.0)
 
 **Merged pull requests:**
 
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#31](https://github.com/buluma/ansible-role-go/pull/31) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#30](https://github.com/buluma/ansible-role-go/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/setup-python from 5 to 6 [\#29](https://github.com/buluma/ansible-role-go/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/molecule-action from 24.6.17 to 25.6.14 [\#28](https://github.com/buluma/ansible-role-go/pull/28) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 24.2.0 to 24.6.17 [\#27](https://github.com/buluma/ansible-role-go/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [24.3.31](https://github.com/buluma/ansible-role-go/tree/24.3.31) (2024-03-26)
