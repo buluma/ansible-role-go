@@ -1,0 +1,11 @@
+---
+- name: Verify
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Check go version
+      ansible.builtin.command:
+        cmd: /usr/local/go/bin/go version
+      changed_when: false
