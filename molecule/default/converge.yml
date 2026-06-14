@@ -9,7 +9,7 @@
         update_cache: "true"
         cache_valid_time: "600"
       changed_when: false
-      when: ansible_os_family == 'Debian'
+      when: ansible_facts.os_family == 'Debian'
   roles:
     - role: buluma.go
   tasks:
@@ -17,4 +17,4 @@
       ansible.builtin.command: go version
       changed_when: false
       environment:
-        PATH: /usr/local/go/bin:{{ ansible_env.PATH }}
+        PATH: /usr/local/go/bin:{{ ansible_facts.env.PATH }}
