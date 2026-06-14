@@ -9,7 +9,7 @@
         update_cache: "true"
         cache_valid_time: "600"
       changed_when: false
-      when: ansible_facts.os_family == 'Debian'
+      when: ansible_facts['os_family'] == 'Debian'
   roles:
     - role: buluma.go
   tasks:
