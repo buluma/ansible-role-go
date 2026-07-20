@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-go/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-go/compare/26.6.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump actions/setup-python from 6 to 7 [\#38](https://github.com/buluma/ansible-role-go/pull/38) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [26.6.2](https://github.com/buluma/ansible-role-go/tree/26.6.2) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-go/compare/26.6.1...26.6.2)
