@@ -87,11 +87,11 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 go_arch: amd64
-go_checksum: 4fa4f869b0f7fc6bb1eb2660e74657fbf04cdd290b5aef905585c86051b34d43
+go_checksum: 65efbc80fdc1fa2cd2631cad5b481777a68e8725f34e89f50fc6ac714e379b40
 go_download_url: "https://dl.google.com/go/{{ go_tarball }}"
 go_platform: linux
 go_tarball: go{{ go_version }}.{{ go_platform }}-{{ go_arch }}.tar.gz
-go_version: "1.22.12"
+go_version: "1.27.3"
 ```
 
 ## [Requirements](#requirements)
